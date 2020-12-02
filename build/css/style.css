@@ -420,7 +420,6 @@ a {
             box-shadow: 0 8px 0 0 #ffffff, 0 16px 0 0 #ffffff; }
 
 .page-header__wrapper {
-  position: relative;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -542,10 +541,14 @@ a {
     color: #795c50; }
 
 @media (max-width: 1023px) {
-  .page-header--menu-opened {
-    min-height: 126px; }
-  .page-header::before {
-    display: none; }
+  .page-header {
+    background-color: #a87b62; }
+    .page-header--menu-closed {
+      background-color: transparent; }
+    .page-header::before {
+      display: none; }
+  .page-header__upper-wrapper {
+    height: 126px; }
   .page-header__logo-link {
     top: 30px; }
   .page-header__logo-icon {
@@ -560,14 +563,15 @@ a {
     padding-left: 45px;
     padding-right: 45px;
     padding-bottom: 62px;
+    padding-top: 10px;
     background-color: #a87b62; }
   .page-header--menu-opened .page-header__wrapper {
     position: absolute; }
   .page-header--menu-closed .page-header__wrapper {
-    padding-bottom: 55px;
+    padding: 0;
     background-color: transparent; }
   .page-header__search-form {
-    margin-top: 82px;
+    margin-top: 0;
     width: 100%;
     height: 40px;
     background-color: rgba(255, 255, 255, 0.15);
@@ -597,6 +601,9 @@ a {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1; }
+  .page-header--menu-closed .page-header__user-nav {
+    margin-top: 0;
+    margin-bottom: 0; }
   .page-header__user-nav a {
     margin-left: 0;
     font-size: 18px;
@@ -608,6 +615,8 @@ a {
     position: absolute;
     top: 55px;
     right: 45px; }
+  .page-header--menu-opened .page-header__cart {
+    top: -71px; }
   .page-header__cart-icon {
     display: block;
     stroke: #ffffff; }
@@ -665,6 +674,34 @@ a {
   .page-header--menu-closed .page-header__login,
   .page-header--menu-closed .page-header__site-nav {
     display: none; } }
+
+@media (max-width: 767px) {
+  .page-header__upper-wrapper {
+    height: 92px; }
+  .page-header__logo-link {
+    top: 20px; }
+  .page-header__logo-icon {
+    width: 52px;
+    height: 52px; }
+  .page-header__toggle {
+    top: 26px;
+    left: 8px; }
+  .page-header__wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 37px; }
+  .page-header__cart {
+    top: 36px;
+    right: 15px; }
+  .page-header--menu-opened .page-header__cart {
+    top: -55px; }
+  .page-header__site-nav {
+    margin-top: 35px; }
+  .page-header__site-nav-list-item {
+    margin-bottom: 21px; }
+    .page-header__site-nav-list-item--last {
+      margin-top: 10px;
+      margin-bottom: 5px; } }
 
 .page-main {
   min-width: 320px;
