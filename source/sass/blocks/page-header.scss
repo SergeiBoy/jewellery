@@ -19,7 +19,6 @@
 
 .page-header__logo-link {
   position: absolute;
-  z-index: 5;
   top: 40px;
   right: 50%;
   transform: translateX(50%);
@@ -31,7 +30,6 @@
 
 .page-header__toggle {
   position: absolute;
-  z-index: 5;
   top: 42px;
   left: 38px;
 
@@ -99,7 +97,7 @@
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
-    line-height: 21px;
+    line-height: normal;
     color: #9b9997;
   }
 }
@@ -380,6 +378,10 @@
     padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 37px;
+  }
+
+  .page-header__search-form input {
+    width: 80%;
   }
 
   .page-header__cart {

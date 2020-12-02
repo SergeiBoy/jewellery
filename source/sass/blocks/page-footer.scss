@@ -2,4 +2,253 @@
 .page-footer {
   min-width: $min-width;
   flex: 0 0 auto;
+
+  background-color: #000000;
+}
+
+.page-footer ul {
+  @include reset-list;
+}
+
+.page-footer__wrapper {
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: $max-width;
+  padding: 97px 100px 73px 100px;
+}
+
+.page-footer__wrapper li {
+  margin-bottom: 21px;
+}
+
+.page-footer__social li {
+  display: flex;
+}
+
+.page-footer__wrapper a {
+  font-family: "Poppins", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffffff;
+
+  &:hover,
+  &:focus {
+    color: darken(#ffffff, 30%);
+  }
+}
+
+.page-footer__social a {
+  display: flex;
+}
+
+.page-footer__social-image-wrapper {
+  margin-right: 7px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+}
+
+.page-footer__form-wrapper {
+  width: 42.88%;
+}
+
+.page-footer .page-footer__ordering-info {
+  margin-left: 33px;
+  margin-right: 10px;
+}
+
+.page-footer .page-footer__about-ch {
+  margin-left: 10px;
+  margin-right: 43px;
+}
+
+.page-footer__form-wrapper h2 {
+  margin-top: -5px;
+  margin-bottom: 0;
+
+  font-family: "Cormorant Garamond", "Times New Roman", serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 44px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+.page-footer__form-wrapper p {
+  margin-top: 8px;
+
+  font-family: "Poppins", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #9b9997;
+}
+
+.page-footer__sign-up-form {
+  margin-top: 42px;
+
+  display: flex;
+  padding-bottom: 10px;
+
+  border-bottom: 1px solid #ffffff;
+}
+
+.page-footer__sign-up-form input {
+  margin-right: auto;
+
+  width: 60%;
+
+  color: #ffffff;
+
+  border: 0;
+  background-color: transparent;
+
+  &:hover,
+  &:focus {
+    background-color: lighten(#000000, 30%);
+  }
+
+  &::placeholder {
+    font-family: "Poppins", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: normal;
+    color: #9b9997;
+  }
+}
+
+.page-footer__sign-up-form button {
+  padding: 0;
+
+  font-family: "Poppins", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffffff;
+
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: darken(#ffffff, 30%);
+  }
+}
+
+.page-footer__sign-up-form span {
+  margin-right: 9px;
+}
+
+.page-footer__social-image {
+  fill: #ffffff;
+}
+
+.page-footer__social-link:hover .page-footer__social-image,
+.page-footer__social-link:focus .page-footer__social-image {
+  fill: darken(#ffffff, 30%);
+}
+
+@media (max-width: $tablet-width) {
+  .page-footer__wrapper {
+    flex-wrap: wrap;
+    padding: 55px 150px 30px 45px;
+  }
+
+  .page-footer__form-wrapper {
+    margin-bottom: 50px;
+
+    width: 100%;
+  }
+
+  .page-footer__sign-up-form {
+    margin-right: 10px;
+  }
+
+  .page-footer .page-footer__ordering-info {
+    margin-left: 0;
+    margin-right: 15px;
+  }
+
+  .page-footer .page-footer__about-ch {
+    margin-left: 15px;
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .page-footer__wrapper {
+    flex-direction: column;
+    padding: 55px 15px 40px 15px;
+  }
+
+  .page-footer__form-wrapper {
+    margin-bottom: 45px;
+  }
+
+  .page-footer__form-wrapper p {
+    margin-top: 12px;
+  }
+
+  .page-footer__sign-up-form {
+    margin-right: 0;
+  }
+
+  .page-footer .page-footer__ordering-info {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .page-footer .page-footer__about-ch {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 25px;
+  }
+
+  .page-footer__social {
+    display: flex;
+  }
+
+  .page-footer__social span {
+    display: none;
+  }
+
+  .page-footer__social-image-wrapper {
+    margin-right: 30px;
+
+    width: auto;
+  }
+
+  .page-footer__social-image {
+    &--facebook {
+      width: 12px;
+      height: 21px;
+    }
+
+    &--instagram {
+      width: 20px;
+      height: 21px;
+    }
+
+    &--pinterest {
+      width: 20px;
+      height: 21px;
+    }
+
+    &--twitter {
+      width: 20px;
+      height: 18px;
+    }
+  }
 }
