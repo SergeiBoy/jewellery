@@ -17,51 +17,67 @@
 
   <body>
 
-    <header class="page-header">
-      <div class="page-header__upper-wrapper">
-        <a class="page-header__logo-link"><svg class="page-header__logo-icon" width="66" height="66"><use xlink:href="img/sprite_auto.svg#icon-logo"></use></svg></a>
-        <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть / Закрыть меню</span></button>
-      </div>
-      <div class="page-header__wrapper">
-        <form class="page-header__search-form" action="#" method="post">
-          <label class="visually-hidden" for="search-field">Печатайте здесь для поиска</label>
-          <input id="search-field" type="text" placeholder="Type here to search" required>
-          <button type="submit">
-            <span class="visually-hidden">Найти</span>
-            <svg class="page-header__magnifier-icon" width="14" height="14"><use xlink:href="img/sprite_auto.svg#icon-magnifier"></use></svg>
-          </button>
-        </form>
-        <nav class="page-header__user-nav">
-          <a href="#" class="page-header__login">Login</a>
-          <a href="#" class="page-header__cart">
-            <span>Cart &nbsp;0</span>
-            <svg class="page-header__cart-icon" width="20" height="18"><use xlink:href="img/sprite_auto.svg#icon-cart"></use></svg>
-          </a>
-        </nav>
-        <nav class="page-header__site-nav">
-          <ul class="page-header__site-nav-list">
-            <li class="page-header__site-nav-list-item"><a href="#">What’s new</a></li>
-            <li class="page-header__site-nav-list-item"><a href="#">Chokers</a></li>
-            <li class="page-header__site-nav-list-item"><a href="#">Necklaces</a></li>
-            <li class="page-header__site-nav-list-item"><a href="#">Rings</a></li>
-            <li class="page-header__site-nav-list-item"><a href="#">Earrings</a></li>
-            <li class="page-header__site-nav-list-item page-header__site-nav-list-item--last">
-              <a href="#">About CH</a>
-              <a href="#">Stores & Hours</a>
-              <a href="#">Contact Us</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+    <div class="body-wrapper-to-move-footer-down">
 
-    <main class="page-main">
-      <picture>
-        <source type="image/webp" srcset="img/main-page-neck@1x.webp 1x, img/main-page-neck@2x.webp 2x">
-        <!-- 1х: 1366px; 2x: 2732px -->
-        <img src="img/main-page-neck@1x.jpg" srcset="img/main-page-neck@2x.jpg 2x" width="1366" height="463" alt="Ювелирные украшения на шее и пальцах">
-      </picture>
-    </main>
+      <header class="page-header">
+        <div class="page-header__wrapper">
+          <div class="page-header__upper-wrapper">
+            <a class="page-header__logo-link"><svg class="page-header__logo-icon" width="66" height="66"><use xlink:href="img/sprite_auto.svg#icon-logo"></use></svg></a>
+            <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть / Закрыть меню</span></button>
+          </div>
+          <div class="page-header__menu-wrapper">
+            <form class="page-header__search-form" action="#" method="post">
+              <label class="visually-hidden" for="search-field">Печатайте здесь для поиска</label>
+              <input id="search-field" type="text" placeholder="Type here to search" required>
+              <button type="submit">
+                <span class="visually-hidden">Найти</span>
+                <svg class="page-header__magnifier-icon" width="14" height="14"><use xlink:href="img/sprite_auto.svg#icon-magnifier"></use></svg>
+              </button>
+            </form>
+            <nav class="page-header__user-nav">
+              <a href="#" class="page-header__login">Login</a>
+              <a href="#" class="page-header__cart">
+                <span>Cart &nbsp;0</span>
+                <svg class="page-header__cart-icon" width="20" height="18"><use xlink:href="img/sprite_auto.svg#icon-cart"></use></svg>
+              </a>
+            </nav>
+            <nav class="page-header__site-nav">
+              <ul class="page-header__site-nav-list">
+                <li class="page-header__site-nav-list-item"><a href="#">What’s new</a></li>
+                <li class="page-header__site-nav-list-item"><a href="#">Chokers</a></li>
+                <li class="page-header__site-nav-list-item"><a href="#">Necklaces</a></li>
+                <li class="page-header__site-nav-list-item"><a href="#">Rings</a></li>
+                <li class="page-header__site-nav-list-item"><a href="#">Earrings</a></li>
+                <li class="page-header__site-nav-list-item page-header__site-nav-list-item--last">
+                  <a href="#">About CH</a>
+                  <a href="#">Stores & Hours</a>
+                  <a href="#">Contact Us</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+      <main class="page-main">
+
+        <h1 class="visually-hidden">Онлайн магазин ювелирных изделий</h1>
+
+        <div class="page-main__main-screen main-screen">
+          <div class="main-screen__text-content">
+            <h2>Perfection</h2>
+            <p>made to be yours</p>
+          </div>
+          <picture>
+            <source type="image/webp" srcset="img/main-page-neck@1x.webp 1x, img/main-page-neck@2x.webp 2x">
+            <!-- 1х: 1366px; 2x: 2732px -->
+            <img src="img/main-page-neck@1x.jpg" srcset="img/main-page-neck@2x.jpg 2x" width="1366" height="471" alt="Ювелирные украшения на шее и пальцах">
+          </picture>
+        </div>
+
+      </main>
+
+    </div>
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
