@@ -1,5 +1,7 @@
 
 @import "normalize.scss";
+@import "slick.scss";
+@import "slick-theme.scss";
 @import "variables.scss";
 @import "mixins.scss";
 @import "fonts.scss";
@@ -7,4 +9,5 @@
 @import "blocks/page-header.scss";
 @import "blocks/page-main.scss";
 @import "blocks/main-screen.scss";
+@import "blocks/slider.scss";
 @import "blocks/page-footer.scss";

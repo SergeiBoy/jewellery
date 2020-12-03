@@ -1,1 +1,4 @@
-source/js/svg4everybody.js
+source/js/vendor/svg4everybody.js
+source/js/vendor/jquery-1.11.0.min.js
+source/js/vendor/jquery-migrate-1.2.1.min.js
+source/js/vendor/slick.min.js
