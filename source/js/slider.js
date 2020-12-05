@@ -1,7 +1,8 @@
 'use strict';
-
+/* global $ */
+/* eslint no-undef: "error"*/
 (function () {
-  $(document).ready(function(){
+  $(document).ready(function () {
     $('.slider__wrapper').slick({
       dots: true,
       infinite: true,

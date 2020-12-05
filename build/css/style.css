@@ -900,6 +900,9 @@ a {
     height: 1px;
     background-color: #a87b62; }
 
+.slider__break {
+  display: none; }
+
 .slider__wrapper {
   margin-top: 60px; }
 
@@ -1002,13 +1005,14 @@ a {
   .slider h2 {
     margin-bottom: 7px; }
   .slider__link-catalog {
-    width: 50px;
     text-align: center; }
     .slider__link-catalog::before {
       bottom: 5px;
-      left: -10px;
-      right: -10px;
+      left: -19px;
+      right: -19px;
       width: auto; }
+  .slider__break {
+    display: block; }
   .slider__wrapper {
     margin-top: 35px; }
   .slider__item h3 {
@@ -1035,7 +1039,7 @@ a {
   margin: 0 auto;
   width: 100%;
   max-width: 1366px;
-  padding: 35px 100px 100px 100px; }
+  padding: 35px 100px 50px 100px; }
 
 .blog h2 {
   margin-bottom: 9px;
@@ -1054,7 +1058,6 @@ a {
           transform: translateX(-50%);
   display: inline-block;
   vertical-align: middle;
-  width: 50px;
   font-family: "Poppins", "Arial", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -1068,8 +1071,8 @@ a {
     content: "";
     position: absolute;
     bottom: 5px;
-    left: -7px;
-    right: -7px;
+    left: -11px;
+    right: -11px;
     width: auto;
     height: 1px;
     background-color: #a87b62; }
@@ -1209,16 +1212,16 @@ a {
 
 @media (max-width: 1023px) {
   .blog {
-    padding: 19px 45px 100px 45px; }
+    padding: 19px 45px 20px 45px; }
   .blog h2 {
     margin-bottom: 20px; }
-  .blog__link-blog {
+  .blog__link-blog::before {
+    bottom: -4px;
+    left: 0;
+    right: 0;
     width: auto; }
-    .blog__link-blog::before {
-      bottom: -4px;
-      left: 0;
-      right: 0;
-      width: auto; }
+  .blog__break {
+    display: none; }
   .blog__outer-wrapper {
     margin-top: 65px;
     -webkit-box-orient: vertical;
@@ -1252,7 +1255,7 @@ a {
 
 @media (max-width: 767px) {
   .blog {
-    padding: 10px 15px 100px 15px; }
+    padding: 10px 15px 20px 15px; }
   .blog__outer-wrapper {
     margin-top: 55px;
     -webkit-box-align: center;
@@ -1283,6 +1286,122 @@ a {
     width: 100%; }
   .blog__item-image img {
     height: 256px; } }
+
+.faq {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1366px;
+  padding: 40px 198px 100px 198px; }
+
+.faq h2 {
+  margin-bottom: 50px;
+  font-family: "Cormorant Garamond", "Times New Roman", serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 44px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #1d1613; }
+
+.faq__wrapper {
+  border: 1px solid #a87b62; }
+
+.faq__item {
+  position: relative;
+  padding-top: 25px;
+  padding-right: 41%;
+  padding-bottom: 24px;
+  padding-left: 42px; }
+
+.faq__item:not(:last-child) {
+  border-bottom: 1px solid #a87b62; }
+
+.faq__item h3 {
+  margin-bottom: 8px;
+  font-family: "Poppins", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  color: #1d1613; }
+
+.faq__item p {
+  margin-top: 0;
+  padding-left: 7px;
+  font-family: "Poppins", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #1d1613; }
+
+.faq__item button {
+  position: absolute;
+  top: 42px;
+  right: 42px;
+  display: none;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer; }
+
+.faq__item--opened button {
+  display: block; }
+
+.faq__item--closed button {
+  display: block; }
+
+.faq__item--closed svg {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg); }
+
+.faq__item--closed h3 {
+  margin-bottom: 20px; }
+
+.faq__item--closed p {
+  display: none; }
+
+@media (max-width: 1023px) {
+  .faq {
+    padding: 20px 45px 100px 45px; }
+  .faq__item {
+    padding-right: 13%;
+    padding-left: 50px; }
+  .faq__item svg {
+    width: 27px;
+    height: 14px; }
+  .faq__item p {
+    margin-top: 24px;
+    margin-bottom: 20px;
+    padding-left: 0; } }
+
+@media (max-width: 767px) {
+  .faq {
+    padding: 10px 15px 100px 15px; }
+  .faq h2 {
+    margin-bottom: 30px; }
+  .faq__item {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20%;
+    padding-left: 25px; }
+  .faq__item h3 {
+    margin-top: 5px;
+    font-size: 16px;
+    line-height: 22px; }
+  .faq__item--closed h3 {
+    margin-top: 8px;
+    margin-bottom: 9px; }
+  .faq__item p {
+    margin-top: 14px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 20px; }
+  .faq__item button {
+    top: 0;
+    right: 0;
+    width: 70px;
+    height: 60px; } }
 
 .page-footer {
   min-width: 320px;
