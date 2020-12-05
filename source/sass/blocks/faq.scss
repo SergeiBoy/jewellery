@@ -4,7 +4,7 @@
 
   width: 100%;
   max-width: $max-width;
-  padding: 40px 198px 100px 198px;
+  padding: 40px 198px 40px 198px;
 }
 
 .faq h2 {
@@ -95,7 +95,7 @@
 
 @media (max-width: $tablet-width) {
   .faq {
-    padding: 20px 45px 100px 45px;
+    padding: 20px 45px 20px 45px;
   }
 
   .faq__item {
@@ -118,7 +118,7 @@
 
 @media (max-width: $mobile-width) {
   .faq {
-    padding: 10px 15px 100px 15px;
+    padding: 10px 15px 15px 15px;
   }
 
   .faq h2 {
