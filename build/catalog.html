@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Online jewellery shop.">
+    <title>Jewellery</title>
+    <link rel="preload" href="fonts/poppins-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/poppins-medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/poppins-bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/cormorant-garamond-italic.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/cormorant-garamond-semibold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/cormorant-garamond-bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link href="css/style.min.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <div class="body-wrapper-to-move-footer-down">
+
+      <header class="page-header">
+        <div class="page-header__wrapper">
+          <div class="page-header__upper-wrapper">
+            <a href="index.html" class="page-header__logo-link page-header__logo-link--inner-pages"><svg class="page-header__logo-icon" width="66" height="66"><use xlink:href="img/sprite_auto.svg#icon-logo"></use></svg></a>
+            <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть / Закрыть меню</span></button>
+          </div>
+          <div class="page-header__menu-wrapper">
+            <form class="page-header__search-form" action="#" method="post">
+              <label class="visually-hidden" for="search-field">Печатайте здесь для поиска</label>
+              <input id="search-field" type="text" placeholder="Type here to search" required="">
+              <button type="submit">
+                <span class="visually-hidden">Найти</span>
+                <svg class="page-header__magnifier-icon" width="14" height="14"><use xlink:href="img/sprite_auto.svg#icon-magnifier"></use></svg>
+              </button>
+            </form>
+            <nav class="page-header__user-nav">
+              <a href="#" class="page-header__login">Login</a>
+              <a href="#" class="page-header__cart">
+                <span>Cart &nbsp;0</span>
+                <svg class="page-header__cart-icon" width="20" height="18"><use xlink:href="img/sprite_auto.svg#icon-cart"></use></svg>
+              </a>
+            </nav>
+            <nav class="page-header__site-nav">
+              <ul class="page-header__site-nav-list">
+                <li class="page-header__site-nav-list-item"><a href="#">What’s new</a></li>
+                <li class="page-header__site-nav-list-item"><a href="#">Chokers</a></li>
+                <li class="page-header__site-nav-list-item"><a href="#">Necklaces</a></li>
+                <li class="page-header__site-nav-list-item"><a href="#">Rings</a></li>
+                <li class="page-header__site-nav-list-item"><a href="#">Earrings</a></li>
+                <li class="page-header__site-nav-list-item page-header__site-nav-list-item--last">
+                  <a href="#">About CH</a>
+                  <a href="#">Stores & Hours</a>
+                  <a href="#">Contact Us</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+      <main class="page-main">
+
+        <h1 class="visually-hidden">Каталог ювелирных изделий</h1>
+
+        <div class="page-main__main-screen main-screen main-screen--catalog-page">
+          <div class="main-screen__text-content main-screen__text-content--catalog-page">
+            <h2>All Jewellery</h2>
+            <p>Discover picks of fashion's finest trends in our jewellery catalog</p>
+          </div>
+          <picture>
+            <source type="image/webp" srcset="img/catalog-page-rings@1x.webp 1x, img/catalog-page-rings@2x.webp 2x">
+            <!-- 1х: 1366px; 2x: 2732px -->
+            <img src="img/catalog-page-rings@1x.jpg" srcset="img/catalog-page-rings@2x.jpg 2x" width="1366" height="261" alt="Кольца">
+          </picture>
+        </div>
+
+        <section class="page-main__shop shop">
+          <div class="shop__wrapper">
+            <h2 class="visually-hidden">Каталог товаров</h2>
+            <button class="shop__filter-open-button" type="button">Filter</button>
+            <div class="shop__filter filter">
+              <button class="filter__close-button" type="button">
+                <svg width="32" height="32"><use xlink:href="img/sprite_auto.svg#icon-close-cross"></use></svg>
+              </button>
+              <form class="filter__form" action="#" method="post">
+                <div class="filter__form-item">
+                  <button type="button"><svg width="17" height="10"><use xlink:href="img/sprite_auto.svg#icon-arrow-up"></use></svg></button>
+                  <h3>Product</h3>
+                  <div class="filter__form-item-checkbox">
+                    <input id="necklaces" type="checkbox" checked="">
+                    <label for="necklaces">Necklaces</label>
+                  </div>
+                  <div class="filter__form-item-checkbox">
+                    <input id="chokers" type="checkbox" checked="">
+                    <label for="chokers">Chokers</label>
+                  </div>
+                  <div class="filter__form-item-checkbox">
+                    <input id="rings" type="checkbox">
+                    <label for="rings">Rings</label>
+                  </div>
+                  <div class="filter__form-item-checkbox">
+                    <input id="earrings" type="checkbox" checked="">
+                    <label for="earrings">Earrings</label>
+                  </div>
+                </div>
+                <div class="filter__form-item">
+                  <button type="button"><svg width="17" height="10"><use xlink:href="img/sprite_auto.svg#icon-arrow-up"></use></svg></button>
+                  <h3>Material</h3>
+                  <div class="filter__form-item-checkbox">
+                    <input id="gold" type="checkbox" checked="">
+                    <label for="gold">Gold</label>
+                  </div>
+                  <div class="filter__form-item-checkbox">
+                    <input id="silver" type="checkbox">
+                    <label for="silver">Silver</label>
+                  </div>
+                </div>
+                <div class="filter__form-item">
+                  <button type="button"><svg width="17" height="10"><use xlink:href="img/sprite_auto.svg#icon-arrow-up"></use></svg></button>
+                  <h3>Collection</h3>
+                  <div class="filter__form-item-checkbox">
+                    <input id="pink-flamingo" type="checkbox" checked="">
+                    <label for="pink-flamingo">Pink flamingo</label>
+                  </div>
+                  <div class="filter__form-item-checkbox">
+                    <input id="dreams" type="checkbox">
+                    <label for="dreams">Dreams</label>
+                  </div>
+                </div>
+                <div class="filter__form-item filter__form-item--price">
+                  <button type="button"><svg width="17" height="10"><use xlink:href="img/sprite_auto.svg#icon-arrow-up"></use></svg></button>
+                  <h3>Price</h3>
+                  <div class="filter__range-filter range-filter">
+                    <div class="range-filter__range-controls">
+                      <div class="range-filter__scale">
+                        <div class="range-filter__bar"></div>
+                      </div>
+                      <div class="range-filter__toggle range-filter__toggle--min" aria-label="Минимальная цена"></div>
+                      <div class="range-filter__toggle range-filter__toggle--max" aria-label="Максимальная цена"></div>
+                    </div>
+                    <div class="range-filter__price-controls">
+                      <label class="range-filter__min-price">$<input type="text" name="min-price" value="55" aria-label="Минимальная цена"></label>
+                      <label class="range-filter__max-price">$<input type="text" name="max-price" value="155" aria-label="Максимальная цена"></label>
+                    </div>
+                  </div>
+                </div>
+                <button class="filter__form-submit-button" type="submit">Apply</button>
+                <button class="filter__form-reset-button" type="reset">Clear All</button>
+              </form>
+            </div>
+            <div class="shop__catalog-wrapper">
+              <div class="shop__catalog catalog catalog--catalog-page">
+                <div class="catalog__item catalog__item--catalog-page">
+                  <a href="card.html">
+                    <div class="catalog__item-image-wrapper--catalog-page">
+                      <picture>
+                        <source type="image/webp" srcset="img/slider-1@1x.webp 1x, img/slider-1@2x.webp 2x">
+                        <!-- 1х: 270px; 2x: 540px -->
+                        <img src="img/slider-1@1x.jpg" srcset="img/slider-1@2x.jpg 2x" width="270" height="284" alt="Ювелирное украшение">
+                      </picture>
+                    </div>
+                    <h3>Necklace with amethyst</h3>
+                    <p>$ 145</p>
+                  </a>
+                </div>
+                <div class="catalog__item catalog__item--catalog-page">
+                  <a href="card.html">
+                    <div class="catalog__item-image-wrapper--catalog-page">
+                      <picture>
+                        <source type="image/webp" srcset="img/slider-2@1x.webp 1x, img/slider-2@2x.webp 2x">
+                        <!-- 1х: 270px; 2x: 540px -->
+                        <img src="img/slider-2@1x.jpg" srcset="img/slider-2@2x.jpg 2x" width="270" height="284" alt="Ювелирное украшение">
+                      </picture>
+                    </div>
+                    <h3>Layered сhoker</h3>
+                    <p>$ 115</p>
+                  </a>
+                </div>
+                <div class="catalog__item catalog__item--catalog-page">
+                  <a href="card.html">
+                    <div class="catalog__item-image-wrapper--catalog-page">
+                      <picture>
+                        <source type="image/webp" srcset="img/slider-3@1x.webp 1x, img/slider-3@2x.webp 2x">
+                        <!-- 1х: 270px; 2x: 540px -->
+                        <img src="img/slider-3@1x.jpg" srcset="img/slider-3@2x.jpg 2x" width="270" height="284" alt="Ювелирное украшение">
+                      </picture>
+                    </div>
+                    <h3>Gold chain</h3>
+                    <p>$ 215</p>
+                  </a>
+                </div>
+                <div class="catalog__item catalog__item--catalog-page">
+                  <a href="card.html">
+                    <div class="catalog__item-image-wrapper--catalog-page">
+                      <picture>
+                        <source type="image/webp" srcset="img/slider-4@1x.webp 1x, img/slider-4@2x.webp 2x">
+                        <!-- 1х: 270px; 2x: 540px -->
+                        <img src="img/slider-4@1x.jpg" srcset="img/slider-4@2x.jpg 2x" width="270" height="284" alt="Ювелирное украшение">
+                      </picture>
+                    </div>
+                    <h3>Galaxy earrings</h3>
+                    <p>$ 95</p>
+                  </a>
+                </div>
+                <div class="catalog__item catalog__item--catalog-page">
+                  <a href="card.html">
+                    <div class="catalog__item-image-wrapper--catalog-page">
+                      <picture>
+                        <source type="image/webp" srcset="img/catalog-1@1x.webp 1x, img/catalog-1@2x.webp 2x">
+                        <!-- 1х: 270px; 2x: 540px -->
+                        <img src="img/catalog-1@1x.jpg" srcset="img/catalog-1@2x.jpg 2x" width="270" height="284" alt="Ювелирное украшение">
+                      </picture>
+                    </div>
+                    <h3>Double pearl earrings</h3>
+                    <p>$ 115</p>
+                  </a>
+                </div>
+                <div class="catalog__item catalog__item--catalog-page">
+                  <a href="card.html">
+                    <div class="catalog__item-image-wrapper--catalog-page">
+                      <picture>
+                        <source type="image/webp" srcset="img/catalog-2@1x.webp 1x, img/catalog-2@2x.webp 2x">
+                        <!-- 1х: 270px; 2x: 540px -->
+                        <img src="img/catalog-2@1x.jpg" srcset="img/catalog-2@2x.jpg 2x" width="270" height="284" alt="Ювелирное украшение">
+                      </picture>
+                    </div>
+                    <h3>Choker with gold bead</h3>
+                    <p>$ 55</p>
+                  </a>
+                </div>
+                <div class="catalog__item catalog__item--catalog-page">
+                  <a href="card.html">
+                    <div class="catalog__item-image-wrapper--catalog-page">
+                      <picture>
+                        <source type="image/webp" srcset="img/catalog-3@1x.webp 1x, img/catalog-3@2x.webp 2x">
+                        <!-- 1х: 270px; 2x: 540px -->
+                        <img src="img/catalog-3@1x.jpg" srcset="img/catalog-3@2x.jpg 2x" width="270" height="284" alt="Ювелирное украшение">
+                      </picture>
+                    </div>
+                    <h3>Gold layered necklace</h3>
+                    <p>$ 155</p>
+                  </a>
+                </div>
+                <div class="catalog__item catalog__item--catalog-page">
+                  <a href="card.html">
+                    <div class="catalog__item-image-wrapper--catalog-page">
+                      <picture>
+                        <source type="image/webp" srcset="img/catalog-4@1x.webp 1x, img/catalog-4@2x.webp 2x">
+                        <!-- 1х: 270px; 2x: 540px -->
+                        <img src="img/catalog-4@1x.jpg" srcset="img/catalog-4@2x.jpg 2x" width="270" height="284" alt="Ювелирное украшение">
+                      </picture>
+                    </div>
+                    <h3>Blue gemstone pendant</h3>
+                    <p>$ 105</p>
+                  </a>
+                </div>
+                <div class="catalog__item catalog__item--catalog-page">
+                  <a href="card.html">
+                    <div class="catalog__item-image-wrapper--catalog-page">
+                      <picture>
+                        <source type="image/webp" srcset="img/catalog-5@1x.webp 1x, img/catalog-5@2x.webp 2x">
+                        <!-- 1х: 270px; 2x: 540px -->
+                        <img src="img/catalog-5@1x.jpg" srcset="img/catalog-5@2x.jpg 2x" width="270" height="284" alt="Ювелирное украшение">
+                      </picture>
+                    </div>
+                    <h3>Boho earrings</h3>
+                    <p>$ 75</p>
+                  </a>
+                </div>
+                <div class="catalog__item catalog__item--catalog-page">
+                  <a href="card.html">
+                    <div class="catalog__item-image-wrapper--catalog-page">
+                      <picture>
+                        <source type="image/webp" srcset="img/catalog-6@1x.webp 1x, img/catalog-6@2x.webp 2x">
+                        <!-- 1х: 270px; 2x: 540px -->
+                        <img src="img/catalog-6@1x.jpg" srcset="img/catalog-6@2x.jpg 2x" width="270" height="284" alt="Ювелирное украшение">
+                      </picture>
+                    </div>
+                    <h3>Gold bird necklace</h3>
+                    <p>$ 135</p>
+                  </a>
+                </div>
+                <div class="catalog__item catalog__item--catalog-page">
+                  <a href="card.html">
+                    <div class="catalog__item-image-wrapper--catalog-page">
+                      <picture>
+                        <source type="image/webp" srcset="img/catalog-7@1x.webp 1x, img/catalog-7@2x.webp 2x">
+                        <!-- 1х: 270px; 2x: 540px -->
+                        <img src="img/catalog-7@1x.jpg" srcset="img/catalog-7@2x.jpg 2x" width="270" height="284" alt="Ювелирное украшение">
+                      </picture>
+                    </div>
+                    <h3>Black leather choker</h3>
+                    <p>$ 85</p>
+                  </a>
+                </div>
+                <div class="catalog__item catalog__item--catalog-page">
+                  <a href="card.html">
+                    <div class="catalog__item-image-wrapper--catalog-page">
+                      <picture>
+                        <source type="image/webp" srcset="img/catalog-9@1x.webp 1x, img/catalog-9@2x.webp 2x">
+                        <!-- 1х: 270px; 2x: 540px -->
+                        <img src="img/catalog-9@1x.jpg" srcset="img/catalog-9@2x.jpg 2x" width="270" height="284" alt="Ювелирное украшение">
+                      </picture>
+                    </div>
+                    <h3>Elephant earrings</h3>
+                    <p>$ 95</p>
+                  </a>
+                </div>
+              </div>
+              <div class="shop__catalog-pagination">
+                <a href="#">Previous</a>
+                <ul class="shop__catalog-pagination-pages-list">
+                  <li class="shop__catalog-pagination-active-page"><a>1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="#">4</a></li>
+                  <li><a href="#">5</a></li>
+                </ul>
+                <a href="#">Next</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </main>
+
+    </div>
+
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__form-wrapper">
+          <h2>The good stuff in your inbox</h2>
+          <p>News and updates from CH. No spam, we promise.</p>
+          <form class="page-footer__sign-up-form" action="#" method="post">
+            <label class="visually-hidden" for="e-mail-field">Введите ваш e-mail</label>
+            <input id="e-mail-field" type="email" placeholder="Your E-mail" required="">
+            <button type="submit">
+              <span>Sign Up</span>
+              <svg class="page-footer__arrow-right" width="32" height="11"><use xlink:href="img/sprite_auto.svg#icon-arrow-right"></use></svg>
+            </button>
+          </form>
+        </div>
+        <ul class="page-footer__ordering-info">
+          <li><a href="#">Ordering & Payment</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Returns & Exchanges</a></li>
+          <li><a href="#">Delivery</a></li>
+        </ul>
+        <ul class="page-footer__about-ch">
+          <li><a href="#">About CH</a></li>
+          <li><a href="#">Stores & Hours</a></li>
+          <li><a href="#">Jobs</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+        <ul class="page-footer__social">
+          <li>
+            <a class="page-footer__social-link" href="https://www.facebook.com/">
+              <div class="page-footer__social-image-wrapper">
+                <svg class="page-footer__social-image page-footer__social-image--facebook" width="8" height="15"><use xlink:href="img/sprite_auto.svg#icon-facebook"></use></svg>
+              </div>
+              <span>Facebook</span>
+            </a>
+          </li>
+          <li>
+            <a class="page-footer__social-link" href="https://www.instagram.com/">
+              <div class="page-footer__social-image-wrapper">
+                <svg class="page-footer__social-image page-footer__social-image--instagram" width="15" height="15"><use xlink:href="img/sprite_auto.svg#icon-instagram"></use></svg>
+              </div>
+              <span>Instagram</span>
+            </a>
+          </li>
+          <li>
+            <a class="page-footer__social-link" href="https://www.pinterest.com/">
+              <div class="page-footer__social-image-wrapper">
+                <svg class="page-footer__social-image page-footer__social-image--pinterest" width="15" height="15"><use xlink:href="img/sprite_auto.svg#icon-pinterest"></use></svg>
+              </div>
+              <span>Pinterest</span>
+            </a>
+          </li>
+          <li>
+            <a class="page-footer__social-link" href="https://twitter.com/">
+              <div class="page-footer__social-image-wrapper">
+                <svg class="page-footer__social-image page-footer__social-image--twitter" width="15" height="13"><use xlink:href="img/sprite_auto.svg#icon-twitter"></use></svg>
+              </div>
+              <span>Twitter</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="js/vendor.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

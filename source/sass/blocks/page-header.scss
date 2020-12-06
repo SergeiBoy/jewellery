@@ -31,6 +31,10 @@
   top: 40px;
   right: 50%;
   transform: translateX(50%);
+
+  &--inner-pages {
+    top: 30px;
+  }
 }
 
 .page-header__logo-icon {
