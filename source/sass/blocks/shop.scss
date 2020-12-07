@@ -1,7 +1,23 @@
 
 .shop {
-  margin-top: 80px;
+  position: relative;
   margin-bottom: 40px;
+
+  padding-top: 80px;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    bottom: 90px;
+    left: 0;
+    right: 0;
+
+    width: auto;
+    height: 1px;
+
+    background-color: #f6f5f4;
+  }
 }
 
 .shop__wrapper {
@@ -44,17 +60,24 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 21px;
-  color: #9b9997;
+  color: #1d1613;
 
   &:hover,
   &:focus {
-    color: darken(#9b9997, 30%);
+    color: lighten(#1d1613, 30%);
   }
 }
 
 .shop__catalog-pagination-pages-list a {
   margin-left: 6px;
   margin-right: 6px;
+
+  color: #9b9997;
+
+  &:hover,
+  &:focus {
+    color: lighten(#9b9997, 30%);
+  }
 }
 
 .shop__catalog-pagination-active-page a {
@@ -63,5 +86,87 @@
   &:hover,
   &:focus {
     color: #1d1613;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .shop {
+    padding-top: 50px;
+  }
+
+  .shop__filter-open-button {
+    margin-bottom: 50px;
+    margin-right: 45px;
+    margin-left: 45px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    min-height: 68px;
+
+    font-family: "Poppins", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #ffffff;
+
+    border: 0;
+    background-color: #a87b62;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      color: darken(#ffffff, 30%);
+    }
+  }
+
+  .shop__wrapper {
+    flex-direction: column;
+  }
+
+  .shop__catalog-wrapper {
+    margin-right: 0;
+  }
+
+  .shop__catalog-pagination {
+    padding-left: 47px;
+    padding-right: 47px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .shop {
+    padding-top: 40px;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .shop__filter-open-button {
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-bottom: 40px;
+  }
+
+  .shop__catalog-pagination {
+    justify-content: center;
+    padding-top: 15px;
+    padding-bottom: 25px;
+  }
+
+  .shop__catalog-pagination > a {
+    display: none;
+  }
+
+  .shop__catalog-pagination-pages-list {
+    margin-right: 0;
+  }
+
+  .shop__catalog-pagination-pages-list a {
+    margin-left: 12px;
+    margin-right: 12px;
   }
 }
