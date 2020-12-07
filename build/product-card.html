@@ -22,7 +22,7 @@
       <header class="page-header">
         <div class="page-header__wrapper">
           <div class="page-header__upper-wrapper">
-            <a class="page-header__logo-link"><svg class="page-header__logo-icon" width="66" height="66"><use xlink:href="img/sprite_auto.svg#icon-logo"></use></svg></a>
+            <a href="index.html" class="page-header__logo-link page-header__logo-link--inner-pages"><svg class="page-header__logo-icon" width="66" height="66"><use xlink:href="img/sprite_auto.svg#icon-logo"></use></svg></a>
             <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть / Закрыть меню</span></button>
           </div>
           <div class="page-header__menu-wrapper">
@@ -61,22 +61,71 @@
 
       <main class="page-main">
 
-        <h1 class="visually-hidden">Онлайн магазин ювелирных изделий</h1>
+        <h1 class="visually-hidden">Карточка изделия</h1>
 
-        <div class="page-main__main-screen main-screen">
-          <div class="main-screen__text-content">
-            <h2>Perfection</h2>
-            <p>made to be yours</p>
+        <section class="page-main__product-card product-card">
+          <div class="product-card__wrapper">
+            <div class="product-card__images">
+              <div class="product-card__images-small">
+                <div class="product-card__images-image">
+                  <picture>
+                    <source type="image/webp" srcset="img/product-card-1@1x.webp 1x, img/product-card-1@2x.webp 2x">
+                    <!-- 1х: 100px; 2x: 200px -->
+                    <img src="img/product-card-1@1x.jpg" srcset="img/product-card-1@2x.jpg 2x" width="100" height="125" alt="Ювелирное украшение">
+                  </picture>
+                </div>
+                <div class="product-card__images-image product-card__images-image--second">
+                  <picture>
+                    <source type="image/webp" srcset="img/product-card-2@1x.webp 1x, img/product-card-2@2x.webp 2x">
+                    <!-- 1х: 100px; 2x: 200px -->
+                    <img src="img/product-card-2@1x.jpg" srcset="img/product-card-2@2x.jpg 2x" width="100" height="125" alt="Ювелирное украшение">
+                  </picture>
+                </div>
+                <div class="product-card__images-image">
+                  <picture>
+                    <source type="image/webp" srcset="img/product-card-3@1x.webp 1x, img/product-card-3@2x.webp 2x">
+                    <!-- 1х: 100px; 2x: 200px -->
+                    <img src="img/product-card-3@1x.jpg" srcset="img/product-card-3@2x.jpg 2x" width="100" height="125" alt="Ювелирное украшение">
+                  </picture>
+                </div>
+              </div>
+              <div class="product-card__images-image product-card__images-image--main">
+                <picture>
+                  <source type="image/webp" srcset="img/product-card-4@1x.webp 1x, img/product-card-4@2x.webp 2x">
+                  <!-- 1х: 470px; 2x: 940px -->
+                  <img src="img/product-card-4@1x.jpg" srcset="img/product-card-4@2x.jpg 2x" width="470" height="435" alt="Ювелирное украшение">
+                </picture>
+              </div>
+            </div>
+            <div class="product-card__description">
+              <h2>Gold Necklace</h2>
+              <p>$ 115</p>
+              <a class="product-card__description-link">Description</a>
+              <a href="#" class="product-card__info-link">Additional info</a>
+              <div class="product-card__characteristic product-card__characteristic--metal-type">
+                <p>Metal type</p>
+                <p>Gold 585</p>
+              </div>
+              <div class="product-card__characteristic">
+                <p>Stone</p>
+                <p>Turquoise</p>
+              </div>
+              <div class="product-card__characteristic">
+                <p>Size</p>
+                <p>18” / 20”</p>
+              </div>
+              <a href="added-to-cart.html" class="product__card-link-added-to-cart">Add to cart</a>
+              <div class="product-card__terms-of-sale">
+                <p>14 Day Returns</p>
+                <p>2-Year Warranty</p>
+                <p>Free Shipping</p>
+              </div>
+            </div>
           </div>
-          <picture>
-            <source type="image/webp" srcset="img/main-page-neck@1x.webp 1x, img/main-page-neck@2x.webp 2x">
-            <!-- 1х: 1366px; 2x: 2732px -->
-            <img src="img/main-page-neck@1x.jpg" srcset="img/main-page-neck@2x.jpg 2x" width="1366" height="471" alt="Ювелирные украшения на шее и пальцах">
-          </picture>
-        </div>
+        </section>
 
-        <section class="page-main__slider slider">
-          <h2>New In</h2>
+        <section class="page-main__slider slider slider--product-card-page">
+          <h2>You May Also Like</h2>
           <a class="slider__link-catalog" href="catalog.html">Shop <br class="slider__break">Now</a>
           <div class="slider__wrapper catalog">
             <div class="catalog__item catalog__item--slider">
@@ -234,145 +283,6 @@
                 <h3>Elephant earrings</h3>
                 <p>$ 95</p>
               </a>
-            </div>
-          </div>
-        </section>
-
-        <section class="page-main__blog blog">
-          <h2>Blog</h2>
-          <a class="blog__link-blog" href="#">Read <br class="blog__break">All</a>
-          <div class="blog__outer-wrapper">
-            <div class="blog__inner-wrapper">
-              <div class="blog__item blog__item--first">
-                <div class="blog__item-text-content">
-                  <p>September 30, 2019</p>
-                  <h3>How to care for your jewellery</h3>
-                  <a href="#">Read Article</a>
-                </div>
-                <div class="blog__item-image">
-                  <picture>
-                    <source type="image/webp" srcset="img/blog-table@1x.webp 1x, img/blog-table@2x.webp 2x">
-                    <!-- 1х: 285px; 2x: 570px -->
-                    <img src="img/blog-table@1x.jpg" srcset="img/blog-table@2x.jpg 2x" width="285" height="300" alt="Украшения на столе">
-                  </picture>
-                </div>
-              </div>
-              <div class="blog__item">
-                <div class="blog__item-text-content blog__item-text-content--second-item">
-                  <p>September 23, 2019</p>
-                  <h3>Power of crystals</h3>
-                  <a href="#">Read Article</a>
-                </div>
-                <div class="blog__item-image">
-                  <picture>
-                    <source type="image/webp" srcset="img/blog-decoration@1x.webp 1x, img/blog-decoration@2x.webp 2x">
-                    <!-- 1х: 285px; 2x: 570px -->
-                    <img src="img/blog-decoration@1x.jpg" srcset="img/blog-decoration@2x.jpg 2x" width="285" height="300" alt="Украшение">
-                  </picture>
-                </div>
-              </div>
-            </div>
-            <div class="blog__item blog__item--third">
-              <div class="blog__item-text-content blog__item-text-content--third-item">
-                <p>September 16, 2019</p>
-                <h3>AW 19 trends</h3>
-                <a href="#">Read Article</a>
-              </div>
-              <div class="blog__item-image blog__item-image--third-item">
-                <picture>
-                  <source type="image/webp" srcset="img/blog-woman@1x.webp 1x, img/blog-woman@2x.webp 2x">
-                  <!-- 1х: 570px; 2x: 1140px -->
-                  <img src="img/blog-woman@1x.jpg" srcset="img/blog-woman@2x.jpg 2x" width="570" height="630" alt="Женщина с украшениями">
-                </picture>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="page-main__faq faq">
-          <h2>Frequently asked questions</h2>
-          <div class="faq__wrapper">
-            <div class="faq__item">
-              <button type="button"><svg width="17" height="10"><use xlink:href="img/sprite_auto.svg#icon-arrow-up"></use></svg></button>
-              <h3>What materials are the jewellery made of?</h3>
-              <p>Our jewellerry is made of solid gold, silver or leather.  Also, some jewellery contains precious and semiprecious stones and crystals.</p>
-            </div>
-            <div class="faq__item">
-              <button type="button"><svg width="17" height="10"><use xlink:href="img/sprite_auto.svg#icon-arrow-up"></use></svg></button>
-              <h3>Which countries do you deliver to?</h3>
-              <p>Our jewellerry is made of solid gold, silver or leather.  Also, some jewellery contains precious and semiprecious stones and crystals.</p>
-            </div>
-            <div class="faq__item">
-              <button type="button"><svg width="17" height="10"><use xlink:href="img/sprite_auto.svg#icon-arrow-up"></use></svg></button>
-              <h3>What are the payment methods?</h3>
-              <p>Our jewellerry is made of solid gold, silver or leather.  Also, some jewellery contains precious and semiprecious stones and crystals.</p>
-            </div>
-            <div class="faq__item">
-              <button type="button"><svg width="17" height="10"><use xlink:href="img/sprite_auto.svg#icon-arrow-up"></use></svg></button>
-              <h3>Can I return the jewellery if it didn’t fit me?</h3>
-              <p>Our jewellerry is made of solid gold, silver or leather.  Also, some jewellery contains precious and semiprecious stones and crystals.</p>
-            </div>
-          </div>
-        </section>
-
-        <section class="page-main__gallery gallery">
-          <h2><span>@</span><span>Chjewellery</span></h2>
-          <a class="gallery__link-gallery" href="#">Follow Us</a>
-          <div class="gallery__outer-wrapper">
-            <div class="gallery__inner-wrapper gallery__inner-wrapper--first">
-              <div class="gallery__item gallery__item--first">
-                <picture>
-                  <source type="image/webp" srcset="img/gallery-1@1x.webp 1x, img/gallery-1@2x.webp 2x">
-                  <!-- 1х: 230px; 2x: 460px -->
-                  <img src="img/gallery-1@1x.jpg" srcset="img/gallery-1@2x.jpg 2x" width="230" height="230" alt="Ювелирные украшения">
-                </picture>
-              </div>
-              <div class="gallery__item gallery__item--second">
-                <picture>
-                  <source type="image/webp" srcset="img/gallery-2@1x.webp 1x, img/gallery-2@2x.webp 2x">
-                  <!-- 1х: 230px; 2x: 460px -->
-                  <img src="img/gallery-2@1x.jpg" srcset="img/gallery-2@2x.jpg 2x" width="230" height="154" alt="Ювелирные украшения">
-                </picture>
-              </div>
-            </div>
-            <div class="gallery__item gallery__item--third">
-              <picture>
-                <source type="image/webp" srcset="img/gallery-3@1x.webp 1x, img/gallery-3@2x.webp 2x">
-                <!-- 1х: 400px; 2x: 800px -->
-                <img src="img/gallery-3@1x.jpg" srcset="img/gallery-3@2x.jpg 2x" width="400" height="414" alt="Женщина с большими сережками">
-              </picture>
-            </div>
-            <div class="gallery__inner-wrapper gallery__inner-wrapper--second">
-              <div class="gallery__item gallery__item--fourth">
-                <picture>
-                  <source type="image/webp" srcset="img/gallery-4@1x.webp 1x, img/gallery-4@2x.webp 2x">
-                  <!-- 1х: 232px; 2x: 464px -->
-                  <img src="img/gallery-4@1x.jpg" srcset="img/gallery-4@2x.jpg 2x" width="232" height="193" alt="Ювелирные украшения на руках">
-                </picture>
-              </div>
-              <div class="gallery__item gallery__item--fifth">
-                <picture>
-                  <source type="image/webp" srcset="img/gallery-5@1x.webp 1x, img/gallery-5@2x.webp 2x">
-                  <!-- 1х: 218px; 2x: 436px -->
-                  <img src="img/gallery-5@1x.jpg" srcset="img/gallery-5@2x.jpg 2x" width="218" height="191" alt="Ювелирные украшения">
-                </picture>
-              </div>
-            </div>
-            <div class="gallery__inner-wrapper gallery__inner-wrapper--third">
-              <div class="gallery__item gallery__item--sixth">
-                <picture>
-                  <source type="image/webp" srcset="img/gallery-6@1x.webp 1x, img/gallery-6@2x.webp 2x">
-                  <!-- 1х: 218px; 2x: 436px -->
-                  <img src="img/gallery-6@1x.jpg" srcset="img/gallery-6@2x.jpg 2x" width="218" height="218" alt="Кольца">
-                </picture>
-              </div>
-              <div class="gallery__item gallery__item--seventh">
-                <picture>
-                  <source type="image/webp" srcset="img/gallery-7@1x.webp 1x, img/gallery-7@2x.webp 2x">
-                  <!-- 1х: 232px; 2x: 464px -->
-                  <img src="img/gallery-7@1x.jpg" srcset="img/gallery-7@2x.jpg 2x" width="232" height="166" alt="Ювелирные украшения на пальцах">
-                </picture>
-              </div>
             </div>
           </div>
         </section>

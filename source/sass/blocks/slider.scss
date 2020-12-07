@@ -5,6 +5,11 @@
   width: 100%;
   max-width: $max-width;
   padding: 85px 84px 50px 82px;
+
+  &--product-card-page {
+    padding-top: 40px;
+    padding-bottom: 127px;
+  }
 }
 
 .slider h2 {
