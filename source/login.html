@@ -28,14 +28,14 @@
           <div class="page-header__menu-wrapper">
             <form class="page-header__search-form" action="#" method="post">
               <label class="visually-hidden" for="search-field">Печатайте здесь для поиска</label>
-              <input id="search-field" type="text" placeholder="Type here to search" required="">
+              <input id="search-field" type="text" placeholder="Type here to search" required>
               <button type="submit">
                 <span class="visually-hidden">Найти</span>
                 <svg class="page-header__magnifier-icon" width="14" height="14"><use xlink:href="img/sprite_auto.svg#icon-magnifier"></use></svg>
               </button>
             </form>
             <nav class="page-header__user-nav">
-              <a href="login.html" class="page-header__login">Login</a>
+              <a class="page-header__login page-header__login--login-page">Login</a>
               <a href="#" class="page-header__cart">
                 <span>Cart &nbsp;0</span>
                 <svg class="page-header__cart-icon" width="20" height="18"><use xlink:href="img/sprite_auto.svg#icon-cart"></use></svg>
@@ -60,38 +60,38 @@
       </header>
 
       <main class="page-main">
-        <h1 class="visually-hidden">Изделие было добавлено в вашу корзину</h1>
 
-        <section class="modal-added-to-cart modal-added-to-cart--separate-page">
-          <button class="modal-added-to-cart__close-button" type="button"></button>
-          <h2>The item was added to your cart</h2>
-          <div class="modal-added-to-cart__product-info">
-            <div class="modal-added-to-cart__product-description">
-              <div class="modal-added-to-cart__product-description-image">
-                <picture>
-                  <source type="image/webp" srcset="img/product-card-4@1x.webp 1x, img/product-card-4@2x.webp 2x">
-                  <!-- 1х: 470px; 2x: 940px -->
-                  <img src="img/product-card-4@1x.jpg" srcset="img/product-card-4@2x.jpg 2x" width="90" height="83" alt="Ювелирное украшение">
-                </picture>
-              </div>
-              <div class="modal-added-to-cart__product-description-text">
-                <h3>Gold Necklace </h3>
-                <p>$ 115</p>
+        <h1 class="visually-hidden">Страница входа на сайт</h1>
+
+        <section class="modal-login modal-login--login-page">
+          <div class="modal-login__wrapper">
+            <button class="modal-login__close-button" type="button"></button>
+            <div class="modal-login__image">
+              <picture>
+                <source type="image/webp" srcset="img/modal-login@1x.webp 1x, img/modal-login@2x.webp 2x">
+                <!-- 1х: 442px; 2x: 884px -->
+                <img src="img/modal-login@1x.jpg" srcset="img/modal-login@2x.jpg 2x" width="442" height="138" alt="Ювелирные изделия">
+              </picture>
+            </div>
+            <div class="modal-login__inner-wrapper">
+              <h2>Log In</h2>
+              <form class="modal-login__form" action="index.html" method="post">
+                <div class="modal-login__form-input modal-login__form-input--email">
+                  <label class="visually-hidden" for="modal-login-email">Ваш E-mail</label>
+                  <input id="modal-login-email" type="email" placeholder="Your E-mail" required>
+                </div>
+                <div class="modal-login__form-input modal-login__form-input--password">
+                  <label class="visually-hidden" for="modal-login-password">Ваш пароль</label>
+                  <input id="modal-login-password" type="password" placeholder="Password" required>
+                </div>
+                <a class="modal-login__forgot-password" href="#">Forgot your password?</a>
+                <button class="modal-login__submit-button" type="submit">Log In</button>
+              </form>
+              <div class="modal-login__sign-up">
+                <p>Don’t have an account?</p>
+                <a href="#">Sign up</a>
               </div>
             </div>
-            <div class="modal-added-to-cart__product-amount">
-              <button class="modal-added-to-cart__increase-button" type="button"></button>
-              <input type="text" value="1">
-              <button class="modal-added-to-cart__decrease-button" type="button"></button>
-            </div>
-          </div>
-          <div class="modal-added-to-cart__cart-info">
-            <p>You have 1 item in the cart</p>
-            <p>Cart subtotal: $ 115</p>
-          </div>
-          <div class="modal-added-to-cart__links">
-            <a class="modal-added-to-cart__link-to-catalog" href="catalog.html">Continue shopping</a>
-            <a class="modal-added-to-cart__link-to-cart" href="cart.html">Checkout</a>
           </div>
         </section>
 
@@ -106,7 +106,7 @@
           <p>News and updates from CH. No spam, we promise.</p>
           <form class="page-footer__sign-up-form" action="#" method="post">
             <label class="visually-hidden" for="e-mail-field">Введите ваш e-mail</label>
-            <input id="e-mail-field" type="email" placeholder="Your E-mail" required="">
+            <input id="e-mail-field" type="email" placeholder="Your E-mail" required>
             <button type="submit">
               <span>Sign Up</span>
               <svg class="page-footer__arrow-right" width="32" height="11"><use xlink:href="img/sprite_auto.svg#icon-arrow-right"></use></svg>
@@ -161,38 +161,6 @@
         </ul>
       </div>
     </footer>
-
-    <section class="modal-login">
-      <div class="modal-login__wrapper">
-        <button class="modal-login__close-button" type="button"></button>
-        <div class="modal-login__image">
-          <picture>
-            <source type="image/webp" srcset="img/modal-login@1x.webp 1x, img/modal-login@2x.webp 2x">
-            <!-- 1х: 442px; 2x: 884px -->
-            <img src="img/modal-login@1x.jpg" srcset="img/modal-login@2x.jpg 2x" width="442" height="138" alt="Ювелирные изделия">
-          </picture>
-        </div>
-        <div class="modal-login__inner-wrapper">
-          <h2>Log In</h2>
-          <form class="modal-login__form" action="index.html" method="post">
-            <div class="modal-login__form-input modal-login__form-input--email">
-              <label class="visually-hidden" for="modal-login-email">Ваш E-mail</label>
-              <input id="modal-login-email" type="email" placeholder="Your E-mail" required="">
-            </div>
-            <div class="modal-login__form-input modal-login__form-input--password">
-              <label class="visually-hidden" for="modal-login-password">Ваш пароль</label>
-              <input id="modal-login-password" type="password" placeholder="Password" required="">
-            </div>
-            <a class="modal-login__forgot-password" href="#">Forgot your password?</a>
-            <button class="modal-login__submit-button" type="submit">Log In</button>
-          </form>
-          <div class="modal-login__sign-up">
-            <p>Don’t have an account?</p>
-            <a href="#">Sign up</a>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <script src="js/vendor.js"></script>
     <script src="js/main.js"></script>

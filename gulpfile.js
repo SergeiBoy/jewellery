@@ -18,13 +18,15 @@ var del = require("del");
 var concat = require("gulp-concat");
 
 gulp.task("main-scripts", function() {
-  return gulp.src(["source/js/menu.js", "source/js/slider.js", "source/js/accordion.js", "source/js/accordion-filter.js", "source/js/filter-opening.js", "source/js/modal-product-card.js"])
+  return gulp.src(["source/js/menu.js", "source/js/slider.js", "source/js/accordion.js", "source/js/accordion-filter.js", "source/js/filter-opening.js",
+    "source/js/modal-product-card.js", "source/js/modal-login.js"])
     .pipe(concat("main.js"))
     .pipe(gulp.dest("build/js"));
 });
 
 gulp.task("vendor-scripts", function() {
-  return gulp.src(["source/js/vendor/svg4everybody.js", "source/js/vendor/jquery-1.11.0.min.js", "source/js/vendor/jquery-migrate-1.2.1.min.js", "source/js/vendor/slick.min.js"])
+  return gulp.src(["source/js/vendor/svg4everybody.js", "source/js/vendor/jquery-1.11.0.min.js",
+    "source/js/vendor/jquery-migrate-1.2.1.min.js", "source/js/vendor/slick.min.js"])
     .pipe(concat("vendor.js"))
     .pipe(gulp.dest("build/js"));
 });

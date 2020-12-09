@@ -14,6 +14,13 @@
   &--opened {
     display: flex;
   }
+
+  &--login-page {
+    position: relative;
+    z-index: 0;
+
+    display: flex;
+  }
 }
 
 .modal-login__wrapper {
@@ -28,6 +35,10 @@
 
   background-color: #f0eae4;
   box-shadow: 0 5px 32px rgba(226, 221, 215, 0.24);
+}
+
+.modal-login--login-page .modal-login__close-button {
+  display: none;
 }
 
 .modal-login__close-button {

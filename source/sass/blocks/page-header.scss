@@ -130,6 +130,13 @@
   }
 }
 
+.page-header__user-nav .page-header__login--login-page {
+  &:hover,
+  &:focus {
+    color: #1d1613;
+  }
+}
+
 .page-header__cart-icon {
   display: none;
 }
@@ -273,6 +280,13 @@
     &:hover,
     &:focus {
       color: darken(#ffffff, 30%);
+    }
+  }
+
+  .page-header__user-nav .page-header__login--login-page {
+    &:hover,
+    &:focus {
+      color: #ffffff;
     }
   }
 
