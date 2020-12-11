@@ -6,7 +6,7 @@
   if (accordion) {
     var faqItems = accordion.querySelectorAll('.faq__item');
 
-    var addingListener = function (item) {
+    var addListener = function (item) {
       var toggle = item.querySelector('button');
 
       toggle.addEventListener('click', function () {
@@ -29,7 +29,7 @@
         item.classList.add('faq__item--closed');
       }
 
-      addingListener(item);
+      addListener(item);
     }
   }
 })();

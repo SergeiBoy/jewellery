@@ -51,7 +51,7 @@
   if (accordion) {
     var faqItems = accordion.querySelectorAll('.faq__item');
 
-    var addingListener = function (item) {
+    var addListener = function (item) {
       var toggle = item.querySelector('button');
 
       toggle.addEventListener('click', function () {
@@ -74,7 +74,7 @@
         item.classList.add('faq__item--closed');
       }
 
-      addingListener(item);
+      addListener(item);
     }
   }
 })();
@@ -87,7 +87,7 @@
   if (accordion) {
     var filterItems = accordion.querySelectorAll('.filter__form-item');
 
-    var addingListener = function (item) {
+    var addListener = function (item) {
       var toggle = item.querySelector('button');
 
       toggle.addEventListener('click', function () {
@@ -110,7 +110,7 @@
         item.classList.add('filter__form-item--closed');
       }
 
-      addingListener(item);
+      addListener(item);
     }
   }
 })();
@@ -166,7 +166,7 @@
 
 (function () {
   var modal = document.querySelector('.modal-added-to-cart');
-  var openButton = document.querySelector('.product__card-link-added-to-cart');
+  var openButton = document.querySelector('.product-card__link-added-to-cart');
 
   if (modal && openButton) {
     var closeButton = modal.querySelector('.modal-added-to-cart__close-button');

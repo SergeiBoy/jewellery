@@ -115,7 +115,7 @@
                 <p>Size</p>
                 <p>18” / 20”</p>
               </div>
-              <a href="added-to-cart.html" class="product__card-link-added-to-cart">Add to cart</a>
+              <a href="added-to-cart.html" class="product-card__link-added-to-cart">Add to cart</a>
               <div class="product-card__terms-of-sale">
                 <p>14 Day Returns</p>
                 <p>2-Year Warranty</p>
@@ -377,7 +377,8 @@
         </div>
         <div class="modal-added-to-cart__product-amount">
           <button class="modal-added-to-cart__increase-button" type="button"></button>
-          <input type="text" value="1">
+          <label class="visually-hidden" for="modal-added-to-cart-quantity">Введите количество</label>
+          <input id="modal-added-to-cart-quantity" type="text" value="1">
           <button class="modal-added-to-cart__decrease-button" type="button"></button>
         </div>
       </div>

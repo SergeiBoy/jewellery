@@ -2,7 +2,7 @@
 
 (function () {
   var modal = document.querySelector('.modal-added-to-cart');
-  var openButton = document.querySelector('.product__card-link-added-to-cart');
+  var openButton = document.querySelector('.product-card__link-added-to-cart');
 
   if (modal && openButton) {
     var closeButton = modal.querySelector('.modal-added-to-cart__close-button');

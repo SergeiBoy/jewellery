@@ -25,8 +25,8 @@ gulp.task("main-scripts", function() {
 });
 
 gulp.task("vendor-scripts", function() {
-  return gulp.src(["source/js/vendor/svg4everybody.js", "source/js/vendor/jquery-1.11.0.min.js",
-    "source/js/vendor/jquery-migrate-1.2.1.min.js", "source/js/vendor/slick.min.js"])
+  return gulp.src(["source/js/vendor/svg4everybody.js", "source/js/vendor/jquery-1.11.0.js",
+    "source/js/vendor/jquery-migrate-1.2.1.js", "source/js/vendor/slick.js"])
     .pipe(concat("vendor.js"))
     .pipe(gulp.dest("build/js"));
 });
