@@ -62,36 +62,37 @@
       <main class="page-main">
         <h1 class="visually-hidden">Изделие было добавлено в вашу корзину</h1>
 
-        <section class="modal-added-to-cart modal-added-to-cart--separate-page">
-          <button class="modal-added-to-cart__close-button" type="button"></button>
+        <section class="modal-cart modal-cart--separate-page">
+          <button class="modal-cart__close-button" type="button"></button>
           <h2>The item was added to your cart</h2>
-          <div class="modal-added-to-cart__product-info">
-            <div class="modal-added-to-cart__product-description">
-              <div class="modal-added-to-cart__product-description-image">
+          <div class="modal-cart__product-info">
+            <div class="modal-cart__product-description">
+              <div class="modal-cart__product-description-image">
                 <picture>
                   <source type="image/webp" srcset="img/product-card-4@1x.webp 1x, img/product-card-4@2x.webp 2x">
                   <!-- 1х: 470px; 2x: 940px -->
                   <img src="img/product-card-4@1x.jpg" srcset="img/product-card-4@2x.jpg 2x" width="90" height="83" alt="Ювелирное украшение">
                 </picture>
               </div>
-              <div class="modal-added-to-cart__product-description-text">
+              <div class="modal-cart__product-description-text">
                 <h3>Gold Necklace </h3>
                 <p>$ 115</p>
               </div>
             </div>
-            <div class="modal-added-to-cart__product-amount">
-              <button class="modal-added-to-cart__increase-button" type="button"></button>
-              <input type="text" value="1">
-              <button class="modal-added-to-cart__decrease-button" type="button"></button>
+            <div class="modal-cart__product-amount">
+              <button class="modal-cart__increase-button" type="button"></button>
+              <label class="visually-hidden" for="added-to-cart-quantity">Введите количество</label>
+              <input id="added-to-cart-quantity" type="text" value="1">
+              <button class="modal-cart__decrease-button" type="button"></button>
             </div>
           </div>
-          <div class="modal-added-to-cart__cart-info">
+          <div class="modal-cart__cart-info">
             <p>You have 1 item in the cart</p>
             <p>Cart subtotal: $ 115</p>
           </div>
-          <div class="modal-added-to-cart__links">
-            <a class="modal-added-to-cart__link-to-catalog" href="catalog.html">Continue shopping</a>
-            <a class="modal-added-to-cart__link-to-cart" href="cart.html">Checkout</a>
+          <div class="modal-cart__links">
+            <a class="modal-cart__link-to-catalog" href="catalog.html">Continue shopping</a>
+            <a class="modal-cart__link-to-cart" href="cart.html">Checkout</a>
           </div>
         </section>
 
@@ -119,7 +120,7 @@
           <li><a href="#">Returns & Exchanges</a></li>
           <li><a href="#">Delivery</a></li>
         </ul>
-        <ul class="page-footer__about-ch">
+        <ul class="page-footer__about-company">
           <li><a href="#">About CH</a></li>
           <li><a href="#">Stores & Hours</a></li>
           <li><a href="#">Jobs</a></li>
@@ -162,34 +163,35 @@
       </div>
     </footer>
 
+    <section class="modal-login-overlay">
+    </section>
+
     <section class="modal-login">
-      <div class="modal-login__wrapper">
-        <button class="modal-login__close-button" type="button"></button>
-        <div class="modal-login__image">
-          <picture>
-            <source type="image/webp" srcset="img/modal-login@1x.webp 1x, img/modal-login@2x.webp 2x">
-            <!-- 1х: 442px; 2x: 884px -->
-            <img src="img/modal-login@1x.jpg" srcset="img/modal-login@2x.jpg 2x" width="442" height="138" alt="Ювелирные изделия">
-          </picture>
-        </div>
-        <div class="modal-login__inner-wrapper">
-          <h2>Log In</h2>
-          <form class="modal-login__form" action="index.html" method="post">
-            <div class="modal-login__form-input modal-login__form-input--email">
-              <label class="visually-hidden" for="modal-login-email">Ваш E-mail</label>
-              <input id="modal-login-email" type="email" placeholder="Your E-mail" required>
-            </div>
-            <div class="modal-login__form-input modal-login__form-input--password">
-              <label class="visually-hidden" for="modal-login-password">Ваш пароль</label>
-              <input id="modal-login-password" type="password" placeholder="Password" required>
-            </div>
-            <a class="modal-login__forgot-password" href="#">Forgot your password?</a>
-            <button class="modal-login__submit-button" type="submit">Log In</button>
-          </form>
-          <div class="modal-login__sign-up">
-            <p>Don’t have an account?</p>
-            <a href="#">Sign up</a>
+      <button class="modal-login__close-button" type="button"></button>
+      <div class="modal-login__image">
+        <picture>
+          <source type="image/webp" srcset="img/modal-login@1x.webp 1x, img/modal-login@2x.webp 2x">
+          <!-- 1х: 442px; 2x: 884px -->
+          <img src="img/modal-login@1x.jpg" srcset="img/modal-login@2x.jpg 2x" width="442" height="138" alt="Ювелирные изделия">
+        </picture>
+      </div>
+      <div class="modal-login__inner-wrapper">
+        <h2>Log In</h2>
+        <form class="modal-login__form" action="index.html" method="post">
+          <div class="modal-login__form-input modal-login__form-input--email">
+            <label class="visually-hidden" for="modal-login-email">Ваш E-mail</label>
+            <input id="modal-login-email" type="email" placeholder="Your E-mail" required>
           </div>
+          <div class="modal-login__form-input modal-login__form-input--password">
+            <label class="visually-hidden" for="modal-login-password">Ваш пароль</label>
+            <input id="modal-login-password" type="password" placeholder="Password" required>
+          </div>
+          <a class="modal-login__forgot-password" href="#">Forgot your password?</a>
+          <button class="modal-login__submit-button" type="submit">Log In</button>
+        </form>
+        <div class="modal-login__sign-up">
+          <p>Don’t have an account?</p>
+          <a href="#">Sign up</a>
         </div>
       </div>
     </section>

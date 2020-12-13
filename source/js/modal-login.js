@@ -6,6 +6,7 @@
 
   if (openButton && modalLogin) {
     var body = document.querySelector('body');
+    var overlay = document.querySelector('.modal-login-overlay');
 
     var closeButton = modalLogin.querySelector('.modal-login__close-button');
     var email = modalLogin.querySelector('.modal-login__form-input--email input');
@@ -45,6 +46,7 @@
     var closePopup = function () {
       writeInLocalStorage();
       modalLogin.classList.remove('modal-login--opened');
+      overlay.classList.remove('modal-login-overlay--modal-opened');
       body.classList.remove('fixed');
       closeButton.removeEventListener('click', onCloseButtonClick);
       document.removeEventListener('keydown', onPopupEscPress);
@@ -56,6 +58,7 @@
       evt.preventDefault();
       evt.stopPropagation();
       body.classList.add('fixed');
+      overlay.classList.add('modal-login-overlay--modal-opened');
       modalLogin.classList.add('modal-login--opened');
 
       try {

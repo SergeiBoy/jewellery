@@ -216,4 +216,23 @@
   .slick-dots {
     margin-top: 15px;
   }
+
+  .slick-dots li:not(.slick-active) {
+    display: none;
+  }
+
+  .slick-active button {
+    cursor: auto;
+
+    &::after {
+      content: " of 6";
+
+      font-family: "Poppins", "Arial", sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 21px;
+      color: #1d1613;
+    }
+  }
 }

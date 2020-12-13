@@ -1,15 +1,18 @@
 
 .modal-login {
   position: absolute;
-  top: 0;
   z-index: 20;
+  top: 100px;
+  right: 50%;
+  transform: translateX(50%);
 
   display: none;
   flex-direction: column;
-  width: 100%;
-  min-height: 786px;
+  width: 430px;
+  min-height: 586px;
 
-  background-color: #ffffff;
+  background-color: #f0eae4;
+  box-shadow: 0 5px 32px rgba(226, 221, 215, 0.24);
 
   &--opened {
     display: flex;
@@ -17,24 +20,16 @@
 
   &--login-page {
     position: relative;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    top: 0;
+    right: auto;
+    transform: none;
     z-index: 0;
 
     display: flex;
   }
-}
-
-.modal-login__wrapper {
-  position: relative;
-  margin: 0 auto;
-  margin-top: 100px;
-
-  display: flex;
-  flex-direction: column;
-  width: 430px;
-  min-height: 586px;
-
-  background-color: #f0eae4;
-  box-shadow: 0 5px 32px rgba(226, 221, 215, 0.24);
 }
 
 .modal-login--login-page .modal-login__close-button {
@@ -92,6 +87,7 @@
 .modal-login__image img {
   margin-left: 50%;
   transform: translateX(-50%);
+  flex-shrink: 0;
 
   display: block;
   max-width: none;
@@ -103,7 +99,7 @@
   padding: 0 45px;
 }
 
-.modal-login__wrapper h2 {
+.modal-login__inner-wrapper h2 {
   margin-top: 50px;
   margin-bottom: 33px;
 
@@ -152,6 +148,7 @@
   width: 100%;
 
   border: 0;
+  border-radius: 0;
   background-color: #f0eae4;
 
   &:hover,
@@ -242,13 +239,13 @@
 
 @media (max-width: $tablet-width) {
   .modal-login {
-    min-height: 746px;
-  }
-
-  .modal-login__wrapper {
-    margin-top: 80px;
+    top: 80px;
 
     width: 442px;
+
+    &--login-page {
+      top: 0;
+    }
   }
 
   .modal-login__close-button {
@@ -272,14 +269,14 @@
 
 @media (max-width: $mobile-width) {
   .modal-login {
-    min-height: 570px;
-  }
-
-  .modal-login__wrapper {
-    margin-top: 50px;
+    top: 50px;
 
     width: 270px;
     min-height: 470px;
+
+    &--login-page {
+      top: 0;
+    }
   }
 
   .modal-login__close-button {
@@ -307,7 +304,7 @@
     padding: 0 15px;
   }
 
-  .modal-login__wrapper h2 {
+  .modal-login__inner-wrapper h2 {
     margin-top: 35px;
     margin-bottom: 30px;
 

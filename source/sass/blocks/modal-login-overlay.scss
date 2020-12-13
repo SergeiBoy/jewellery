@@ -1,0 +1,29 @@
+
+.modal-login-overlay {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 15;
+
+  display: none;
+  min-height: 786px;
+
+  background-color: #ffffff;
+
+  &--modal-opened {
+    display: block;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .modal-login-overlay {
+    min-height: 746px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .modal-login-overlay {
+    min-height: 570px;
+  }
+}

@@ -122,6 +122,7 @@
 .gallery__item img {
   margin-left: 50%;
   transform: translateX(-50%);
+  flex-shrink: 0;
 
   display: block;
   max-width: none;
