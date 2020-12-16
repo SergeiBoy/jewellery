@@ -5,6 +5,7 @@
   margin-right: 35px;
 
   flex-shrink: 0;
+  padding-bottom: 40px;
 }
 
 .filter__close-button {
@@ -125,6 +126,13 @@
   }
 }
 
+.filter__form-item-checkbox input:hover + label,
+.filter__form-item-checkbox input:focus + label {
+  color: lighten(#1d1613, 30%);
+
+  cursor: pointer;
+}
+
 .filter__form-submit-button {
   margin-top: 35px;
   margin-bottom: 25px;
@@ -178,20 +186,25 @@
 
 @media (max-width: $tablet-width) {
   .filter {
+    margin-left: 0;
+    margin-right: 0;
+
     display: none;
+    min-height: 957px;
 
     &--opened {
       position: absolute;
       top: 0;
-      margin-left: 0;
-      margin-right: 0;
       z-index: 5;
 
       display: flex;
       width: 100%;
-      min-height: 957px;
 
       background-color: #ffffff;
+    }
+
+    &--no-js {
+      display: flex;
     }
   }
 
@@ -263,6 +276,10 @@
     cursor: pointer;
   }
 
+  .filter--no-js .filter__close-button {
+    display: none;
+  }
+
   .filter__form-submit-button {
     margin-top: 40px;
     margin-left: 20px;
@@ -279,9 +296,7 @@
 
 @media (max-width: $mobile-width) {
   .filter {
-    &--opened {
-      min-height: 872px;
-    }
+    min-height: 872px;
   }
 
   .filter__form {

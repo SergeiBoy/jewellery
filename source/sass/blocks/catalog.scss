@@ -31,18 +31,10 @@
   margin: 0 auto;
 }
 
-.catalog__item-image-wrapper--catalog-page picture {
-  margin-left: 50%;
-  transform: translateX(-50%);
-}
-
 .catalog__item-image-wrapper--catalog-page img {
-  margin-left: 50%;
-  transform: translateX(-50%);
   flex-shrink: 0;
 
   display: block;
-  max-width: none;
 }
 
 .catalog__item h3 {
@@ -82,6 +74,18 @@
     &--catalog-page {
       height: 208px;
     }
+  }
+
+  .catalog__item-image-wrapper--catalog-page picture {
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .catalog__item-image-wrapper--catalog-page img {
+    margin-left: 50%;
+    transform: translateX(-50%);
+
+    max-width: none;
   }
 
   .catalog__item--slider img {

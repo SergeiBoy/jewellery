@@ -9,6 +9,9 @@
 
     var filter = shop.querySelector('.filter');
 
+    openButton.classList.remove('shop__filter-open-button--no-js');
+    filter.classList.remove('filter--no-js');
+
     var onCloseButtonClick = function () {
       closePopup();
     };

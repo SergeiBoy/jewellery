@@ -72,6 +72,14 @@
   }
 }
 
+.modal-login__close-button:hover,
+.modal-login__close-button:focus {
+  &::before,
+  &::after {
+    background-color: lighten(#1d1613, 30%);
+  }
+}
+
 .modal-login__image {
   display: flex;
   align-items: center;

@@ -1,7 +1,7 @@
 
 .modal-cart {
-  position: absolute;
-  top: 373px;
+  position: fixed;
+  top: 200px;
   right: 50%;
   transform: translateX(50%);
   z-index: 35;
@@ -82,6 +82,14 @@
 
   &::after {
     transform: rotate(-45deg);
+  }
+}
+
+.modal-cart__close-button:hover,
+.modal-cart__close-button:focus {
+  &::before,
+  &::after {
+    background-color: lighten(#1d1613, 30%);
   }
 }
 
@@ -304,7 +312,7 @@
 
 @media (max-width: $tablet-width) {
   .modal-cart {
-    top: 258px;
+    top: 150px;
 
     padding-left: 30px;
     padding-right: 30px;

@@ -116,6 +116,10 @@
     background-color: #a87b62;
     cursor: pointer;
 
+    &--no-js {
+      display: none;
+    }
+
     &:hover,
     &:focus {
       color: darken(#ffffff, 30%);

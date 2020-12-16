@@ -132,6 +132,12 @@
     margin-bottom: 17px;
   }
 
+  .slider__link-catalog {
+    &::before {
+      bottom: -4px;
+    }
+  }
+
   .slider__wrapper {
     margin-top: 53px;
   }

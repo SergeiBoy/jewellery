@@ -225,6 +225,8 @@
   }
 
   .page-header--menu-closed .page-header__menu-wrapper {
+    position: absolute;
+
     padding: 0;
 
     background-color: transparent;
@@ -293,12 +295,8 @@
 
   .page-header__cart {
     position: absolute;
-    top: 55px;
-    right: 45px;
-  }
-
-  .page-header--menu-opened .page-header__cart {
     top: -71px;
+    right: 45px;
   }
 
   .page-header__cart-icon {
@@ -407,17 +405,17 @@
     padding-bottom: 37px;
   }
 
+  .page-header--menu-opened .page-header__menu-wrapper {
+    min-height: calc(100vh - 92px);
+  }
+
   .page-header__search-form input {
     width: 80%;
   }
 
   .page-header__cart {
-    top: 36px;
-    right: 15px;
-  }
-
-  .page-header--menu-opened .page-header__cart {
     top: -55px;
+    right: 15px;
   }
 
   .page-header__site-nav {
