@@ -2,3 +2,11 @@
 .page-main {
   min-width: $min-width;
 }
+
+@media (max-width: $tablet-width) {
+  .page-main {
+    &--menu-opened {
+      @include visually-hidden;
+    }
+  }
+}

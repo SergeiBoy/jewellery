@@ -162,6 +162,12 @@
 }
 
 @media (max-width: $tablet-width) {
+  .page-footer {
+    &--menu-opened {
+      @include visually-hidden;
+    }
+  }
+
   .page-footer__wrapper {
     flex-wrap: wrap;
     padding: 55px 150px 33px 45px;

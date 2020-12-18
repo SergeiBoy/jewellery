@@ -222,6 +222,8 @@
 
   .page-header--menu-opened .page-header__menu-wrapper {
     position: absolute;
+
+    min-height: calc(100vh - 126px);
   }
 
   .page-header--menu-closed .page-header__menu-wrapper {

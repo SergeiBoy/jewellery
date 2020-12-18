@@ -1,6 +1,6 @@
 
 .modal-login {
-  position: absolute;
+  position: fixed;
   z-index: 20;
   top: 100px;
   right: 50%;
@@ -277,7 +277,7 @@
 
 @media (max-width: $mobile-width) {
   .modal-login {
-    top: 50px;
+    top: 30px;
 
     width: 270px;
     min-height: 470px;
